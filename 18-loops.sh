@@ -23,7 +23,7 @@ VALIDATE(){ # functions receive inputs through args just like shell script args
         echo -e "Installing $2 ... $R is FAILURE $N" | tee -a $LOG_FILE
         exit 1
     else
-        echo "Installing $2 ... $G is SUCCESS $N" | tee -a $LOG_FILE
+        echo -e "Installing $2 ... $G is SUCCESS $N" | tee -a $LOG_FILE
     fi
 }
 
@@ -38,6 +38,6 @@ do
         dnf install $package -y &>>$LOG_FILE
         VALIDATE $? "$package"
     else
-        echo "$package already installed ... $Y SKIPPING $N" | tee -a $LOG_FILE
+        echo "$package already installed ... $Y SKIPPING $N" 
     fi
 done
