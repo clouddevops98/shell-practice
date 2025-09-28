@@ -6,3 +6,4 @@ Y="\e[33m"
 N="\e[34m"
 
 echo -e "$G Hello World"
+echo "Check this colour"
