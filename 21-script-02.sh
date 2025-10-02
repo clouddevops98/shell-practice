@@ -2,4 +2,4 @@
 
 
 echo "My Country: $NAME"
-echo "PID of SCRIPT-01: $$"
+echo "PID of SCRIPT-02: $$"
