@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DISK_USAGE=$(df -hT | grep -v Filesystem)
+DISK_USAGE=$(df -hT | grep -v Filesystem | awk '{print $7}')
 
 while IFS=read -r line
 do
