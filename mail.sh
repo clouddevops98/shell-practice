@@ -2,7 +2,8 @@
 TO_ADDRESS=$1
 SUBJECT=$2
 ALERT_TYPE=$3
-MESSAGE_BODY=$(echo $4 | sed -e 's/[]\/$*.^[]/\\&/g')
+MESSAGE_BODY=$4
+
 IP_ADDRESS=$5
 TO_TEAM=$6
 
